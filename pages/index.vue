@@ -164,6 +164,28 @@
                 </div>
             </section>
         </section>
+        <section class="msg-rapide msg2">
+            <div class="context">
+                <div>
+                    <p class="italic">
+                        Quel que soit votre niveau actuel, nos cours d'espagnol sont conçus pour vous aider à atteindre vos objectifs linguistiques.<br> Rejoignez-nous dans cette aventure passionnante et découvrez tout ce que la langue espagnole a à offrir!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="niveaux-cours bloc">
+            <div>
+                <h2>Explorez nos niveaux de cours d'espagnol</h2>
+                <ul>
+                    <li><strong><Icon name="material-symbols:filter-1"/>Niveau Débutant:</strong> Vous n'avez aucune expérience préalable en espagnol? Pas de souci! Notre niveau débutant vous guidera à travers les bases essentielles de la langue, vous permettant de communiquer efficacement dans des situations courantes.</li>
+                    <li><strong><Icon name="material-symbols:filter-2"/>Niveau Intermédiaire: </strong>Prêt à passer au niveau supérieur? Notre programme intermédiaire est conçu pour renforcer vos acquis et élargir votre vocabulaire. Vous développerez une compréhension plus approfondie de la grammaire et des structures de phrases, vous préparant à des conversations plus complexes.</li>
+                    <li><strong><Icon name="material-symbols:filter-3"/>Niveau Avancé: </strong> Pour ceux qui aspirent à une maîtrise totale de la langue, notre niveau avancé offre des défis stimulants et des opportunités d'approfondir votre compréhension de l'espagnol. Vous perfectionnerez votre prononciation, affinerez votre expression écrite et explorerez des sujets plus sophistiqués.</li>
+                </ul>
+            </div>
+            <div class="image-levels">
+                <img src="~/assets/images/levels.webp"/>
+            </div>
+        </section>
         <section class="contact bloc" id="contact">
             <section class="image-contact">
                 <img src="~/assets/images/contact.webp"/>
