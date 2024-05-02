@@ -213,10 +213,4 @@
     definePageMeta({
         layout: 'default'
     })
-
-    onMounted(() => {
-        console.log('summary data')
-    });
-
-    
 </script>

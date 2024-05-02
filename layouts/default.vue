@@ -35,15 +35,24 @@
           </section>
       </div>
       <footer>
-       <div> ©2024 <strong>Académie Olé</strong> académie d'espagnol en ligne</div>
+        <div class="copyrigth-footer">
+          <div>©2024 <strong>Académie Olé</strong> académie d'espagnol en ligne</div>
+          <div class="actions-footer"><a @click="refreshCookies()">Témoins</a><a href="/politiques-confidentialites">Politique de confidentialité</a></div>
+        </div>
       </footer>
       <BandeauCookies/>
     </div>
 </template>
 <script setup lang="ts">
+    const { $session } = useNuxtApp()
     const showMenuMobile = ref(false)
 
     const setShowMenuMobile = () =>{
       showMenuMobile.value = !showMenuMobile.value
+    }
+    
+    const refreshCookies = () =>{
+      $session.deleteItem('sessionCookie')
+      location.reload()
     }
 </script>

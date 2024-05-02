@@ -1,0 +1,45 @@
+.politiques{
+    padding: 60px 150px;
+
+    h4{
+        color:$color-principal-1;
+    }
+
+    h2{
+        margin-bottom: 50px;
+    }
+
+    .section{
+        margin-top: 20px;
+
+        .service-cookie{
+
+            cursor: pointer;
+            &:not(:first-child){
+                padding-top: 20px;
+                border-top: 1px solid $color-principal-3;
+            }
+
+            h4{
+                color:$color-principal;
+            }
+        }
+    }
+
+    .list-services{
+        border:1px solid $color-secondaire;
+        border-radius: 5px;
+        margin: 20px 0;
+        padding: 30px;
+        font-size: 0.8rem;
+        color:$color-font-3-black;
+
+        .service-name{
+            border-bottom: 1px solid $color-gris-1;
+        }
+    }
+
+    p{
+        text-align: justify;
+    }
+}

@@ -167,12 +167,32 @@ header{
 }
 
 footer{
-    background-color: $color-secondaire;
-    height: 60px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    .copyrigth-footer{
+
+        background-color: $color-secondaire;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 0 150px;
+
+        .actions-footer{
+            text-align: right;
+            a{
+                text-decoration: underline;
+                cursor: pointer;
+                color:$color-font-black;
+                &:hover{
+                    text-decoration: none;
+                }
+                &:not(:last-child){
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
 }
 
 .menu-top{

@@ -29,6 +29,12 @@ export default defineNuxtPlugin(() => {
                     if (process.client) {
                         return sessionStorage.setItem(item, value)
                     }
+                },
+
+                deleteItem(item) {
+                    if(process.client) {
+                        return sessionStorage.removeItem(item)
+                    }
                 }
             }
         }
