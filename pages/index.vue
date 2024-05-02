@@ -81,6 +81,7 @@
                     <li><strong><Icon name="material-symbols:calendar-clock"/>Flexibilité maximale: </strong>Plus besoin de vous adapter à un horaire fixe. Planifiez vos sessions selon votre disponibilité et apprenez à votre propre rythme, où que vous soyez.</li>
                     <li><strong><Icon name="solar:square-academic-cap-2-bold"/>Excellence académique: </strong>Nos instructeurs qualifiés sont des locuteurs natifs et des experts de la langue espagnole, prêts à vous guider vers la maîtrise linguistique.</li>
                 </ul>
+                <a href="/cours/prives">Plus de détails</a>
             </div>
         </section>
         <div class="separateur"></div>
@@ -98,6 +99,7 @@
                     <li><strong><Icon name="game-icons:progression"/>Progression accélérée: </strong>Le format semi-privé favorise une progression plus rapide grâce à des leçons ciblées et à des exercices pratiques adaptés aux besoins individuels de chaque participant.</li>
                     <li><strong><Icon name="healthicons:group-discussion-meetingx3"/>Échange et enrichissement: </strong> Partagez vos expériences, vos questions et vos succès avec vos pairs pour une expérience d'apprentissage enrichissante et stimulante.</li>
                 </ul>
+                <a href="/cours/semi-prives">Plus de détails</a>
             </div>
         </section>
         <div class="separateur"></div>
@@ -114,6 +116,7 @@
                     <li><strong><Icon name="fluent-emoji-high-contrast:woman-teacher"/>Professeurs Passionnés: </strong>Nos instructeurs dévoués transmettent leur amour de la langue espagnole à travers des cours interactifs et engageants.</li>
                     <li><strong><Icon name="material-symbols:book-2"/>Ressources Complètes: </strong>Des outils pédagogiques modernes et des supports multimédias enrichissent l'apprentissage pour une expérience complète.</li>
                 </ul>
+                <a href="/cours/parascolaires">Plus de détails</a>
             </div>
         </section>
         <section class="msg-rapide">
@@ -123,6 +126,7 @@
                     <p>
                         Ne laissez pas la barrière de la langue vous retenir. Avec nos cours privés d'espagnol en ligne, vous pouvez atteindre vos objectifs linguistiques avec confiance et facilité. Réservez votre consultation gratuite dès aujourd'hui et commencez votre voyage vers la maîtrise de l'espagnol !
                     </p>
+                    <div class="section-btn"><a class="btn" href="#contact">Communiquez avec nous</a></div>
                     <div class="separateur"></div>
                 </div>
             </div>

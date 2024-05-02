@@ -7,8 +7,9 @@
         <section class="actions-header desktop">
           <ul>
             <li><a href="/#qui-sommes-nous">Qui sommes nous</a></li>
-            <li><a href="/#services">Nos services</a></li>
-            <li><a href="/exercices">Exercices</a></li>
+            <li class="li-services">
+              <a href="/#services">Nos services</a>
+            </li>
             <li><a href="/#contact">Communiquez avec nous</a></li>
           </ul>
         </section>
@@ -20,7 +21,6 @@
             <ul>
               <li><a href="/#qui-sommes-nous">Qui sommes nous</a></li>
               <li><a href="/#services">Nos services</a></li>
-              <li><a href="/exercices">Exercices</a></li>
               <li><a href="/#contact">Communiquez avec nous</a></li>
             </ul>
           </div>

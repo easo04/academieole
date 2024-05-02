@@ -73,7 +73,35 @@ header{
                             color:$color-secondaire;
                         }
                     }
+
+                    &.li-services{
+                        position: relative;
+                        .sous-menu-services{
+                            display: none;
+                            position: absolute;
+                            //bottom: -70px;
+                            background: $color-white;
+                            color:$color-principal-3;
+                           // width: 150px;
+                            padding: 0;
+                            li{
+                                padding: 5px 20px;
+                                a{
+
+                                    font-weight: 500;
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                        &:hover{
+                            .sous-menu-services{
+                                display: block;
+                            }
+                        }
+                    }
                 }
+
+
             }
         }
 
@@ -690,6 +718,16 @@ footer{
                     }
                 }
            }
+
+           a{
+                color:$color-secondaire;
+                text-decoration: underline;
+                float: right;
+                &:hover{
+                    color:$color-secondaire-opacy;
+                    text-decoration: none;
+                }
+            }
         }
     }
 
@@ -755,6 +793,22 @@ footer{
                 text-align: center;
                 &.italic{
                     font-style: italic;
+                }
+            }
+
+            .section-btn{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+
+                .btn{
+                    background-color: $color-secondaire;
+                    color:$color-white-2;
+    
+                    &:hover{
+                        background-color: $color-secondaire-opacy;
+                    }
                 }
             }
         }
