@@ -4,8 +4,8 @@
             <section class="content-hero-section">
                 <section>
                     <h1>Académie Olé - Cours d'espagnol en ligne</h1>
-                <p>Des cours adaptés à tous, des particuliers aux entreprises, pour élever votre maîtrise linguistique à un nouveau niveau.</p>
-                <a class="btn" href="#contact">Nous contacter</a>
+                <p>Vous rêvez de parler couramment l'espagnol? Vous souhaitez découvrir une nouvelle langue et une culture vibrante depuis le confort de votre foyer? Ne cherchez plus! Nos cours d'espagnol en ligne sont conçus pour vous aider à atteindre vos objectifs linguistiques</p>
+                <a class="btn" href="#contact">Communiquez avec nous</a>
                 </section>
             </section>
         </section>
@@ -48,15 +48,15 @@
                     <div class="image"><img src="~/assets/images/cours-prive.webp"/></div>
                     <p>
                         Maîtrisez l'espagnol avec des <strong>cours privés en ligne personnalisés</strong>. Nos professeurs qualifiés vous guident à travers un apprentissage sur mesure, adapté à votre niveau et à votre emploi du temps chargé. Commencez dès aujourd'hui votre voyage linguistique vers la fluidité et la confiance en espagnol.
-                        <a href="#cours-prive">Voir plus</a>
+                        <a href="/cours/prives">Plus de détails</a>
                     </p>
                 </section>
                 <section class="service2">
-                    <h3>Cours en groupe</h3>
+                    <h3>Cours semi-privés</h3>
                     <div class="image"><img src="~/assets/images/cours-groupe.webp"/></div>
                     <p>
-                        Rejoignez nos <strong>cours d'espagnol en ligne en groupe </strong>et progressez aux côtés d'autres passionnés de la langue et de la culture hispanique. Des leçons interactives, des conversations dynamiques et une immersion totale vous attendent. Inscrivez-vous dès maintenant et découvrez une nouvelle façon conviviale d'apprendre l'espagnol.
-                        <a href="#cours-groupe">Voir plus</a>
+                        Rejoignez nos <strong>cours d'espagnol en ligne semi-privés </strong>et progressez aux côtés d'autres passionnés de la langue et de la culture hispanique. Des leçons interactives, des conversations dynamiques et une immersion totale vous attendent. Inscrivez-vous dès maintenant et découvrez une nouvelle façon conviviale d'apprendre l'espagnol.
+                        <a href="/cours/semi-prives">Plus de détails</a>
                     </p>
                 </section>
                 <section class="service3">
@@ -64,7 +64,7 @@
                     <div class="image"><img src="~/assets/images/cours-parascolaires.webp"/></div>
                     <p>
                         Offrez à vos enfants une aventure éducative passionnante avec nos <strong>cours parascolaires d'espagnol!</strong> Des leçons interactives, des activités amusantes et des professeurs dynamiques les attendent. Donnez-leur une longueur d'avance dès maintenant en leur permettant d'explorer une nouvelle langue et une culture riche.
-                        <a href="#cours-parascolaire">Voir plus</a>
+                        <a href="/cours/parascolaires">Plus de détails</a>
                     </p>
                 </section>
             </section>
@@ -91,7 +91,7 @@
             <div class="description-service">
                 <h2>Maximisez votre apprentissage avec nos cours semi-privés d'espagnol en ligne!</h2>
                <p>
-                    Vous cherchez un équilibre parfait entre l'attention individuelle et la dynamique de groupe ? Nos cours semi-privés d'espagnol offrent la solution idéale ! Profitez de l'expertise de nos professeurs tout en partageant l'expérience d'apprentissage avec un petit groupe d'apprenants motivés.
+                    Vous cherchez un équilibre parfait entre l'attention individuelle et la dynamique de groupe? Nos cours semi-privés d'espagnol offrent la solution idéale! Profitez de l'expertise de nos professeurs tout en partageant l'expérience d'apprentissage avec un petit groupe d'apprenants motivés.
                </p>
                <ul>
                     <li><strong><Icon name="ic:baseline-groups"/>Petits groupes, grande attention: </strong>Bénéficiez de l'attention personnalisée de nos professeurs tout en bénéficiant de l'interaction et de la collaboration avec un groupe restreint d'apprenants.</li>
@@ -106,7 +106,7 @@
                 <img src="~/assets/images/cours-parascolaires.webp" />
             </div>
             <div class="description-service">
-                <h2>Explorez l'espagnol avec nos cours parascolaires !</h2>
+                <h2>Explorez l'espagnol avec nos cours parascolaires!</h2>
                 <p>Cherchez-vous une façon passionnante pour vos enfants d'élargir leurs horizons ? Nos cours parascolaires d'espagnol offrent une immersion interactive dans la langue et la culture hispanique.</p>
                 <ul>
                     <li><strong><Icon name="bxs:party"/>Expérience ludique: </strong>Des leçons dynamiques, des jeux et des activités créatives captiveront l'intérêt de vos enfants tout en leur permettant d'apprendre.</li>
@@ -197,39 +197,10 @@
                 <div class="coordonnees">
                     <h3>Nos coordonnées:</h3>
                     <ul>
-                        <li><Icon name="material-symbols:call"></Icon><strong>Tél:</strong> 418 806-2904</li>
-                        <li><Icon name="material-symbols:alternate-email"></Icon><strong>Email:</strong> <a href="email:academieole@gmail.com">academieole@gmail.com</a></li>
+                        <li><Icon name="material-symbols:call"></Icon><strong>Tél: </strong><a href="tel:581 994-9971">581 994-9971</a></li>
+                        <li><Icon name="material-symbols:alternate-email"></Icon><strong>Email:</strong> <a href="mailto:academieole@gmail.com">academieole@gmail.com</a></li>
                     </ul>
                 </div>
-                <!--<form>
-                    <section class="colum-flex">
-                        <div>
-                            <label for="nom">Nom:</label>
-                            <input type="text" name="nom" id="nom"/>
-                        </div>
-                        <div>
-                            <label for="prenom">Prénom:</label>
-                            <input type="text" name="prenom"  id="prenom"/>
-                        </div>
-                    </section>
-                    <section class="colum-flex">
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="text" name="email"  id="email"/>
-                        </div>
-                        <div>
-                            <label for="sujet">Sujet:</label>
-                            <input type="text" name="sujet" id="sujet"/>
-                        </div>
-                    </section>
-                    <section class="colum-one">
-                        <div>
-                            <label for="content">Laissez votre message:</label>
-                            <textarea name="content" id="content"/>
-                        </div>
-                    </section>
-                    <button class="btn">Envoyer</button>
-                </form>-->
             </section>
         </section>
     </div>

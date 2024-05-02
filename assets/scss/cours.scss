@@ -1,0 +1,85 @@
+.content-cours{
+
+    &.cours-prives{
+        .hero-section{
+            background-image: url('~/assets/images/cours-prive.webp');
+
+            h2{
+                color:$color-secondaire;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    &.cours-semi-prives{
+        .hero-section{
+            background-image: url('~/assets/images/cours-groupe.webp');
+
+            h2{
+                color:$color-secondaire;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    &.cours-parascolaires{
+        .hero-section{
+            background-image: url('~/assets/images/cours-parascolaires.webp');
+
+            h2{
+                color:$color-secondaire;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .section-spanish-explain{
+        margin-top: 50px;
+    }
+
+    .niveaux-cours{
+        background-color: $color-principal-3;
+        padding-top: 40px;
+
+        h2{
+            color:$color-white;
+        }
+        ul{
+            li{
+                color:$color-white-2;
+
+                strong{
+                    color:$color-principal-6;
+                }
+
+                &::marker {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    .msg-rapide{
+        margin: 0;
+        &.msg-parascolaire{
+            background-image: url('~/assets/images/cours-parascolaires-background.jpg');
+        }
+    }
+
+    .section-service-description{
+        margin-bottom: 30px;
+        .description-service{
+            h2{
+                color:$color-secondaire-opacy;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+                li{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+}
