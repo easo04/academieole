@@ -4,6 +4,10 @@ body{
     min-height: 100vh;
 }
 
+.site{
+    position: relative;
+}
+
 header{
     background-color: $color-white;
     height: 70px;

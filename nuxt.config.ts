@@ -19,7 +19,9 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  modules: ['nuxt-icon'],
+
+  modules: ['nuxt-icon', 'nuxt-gtag'],
+
   app: {
     head: {
       title: 'Académie Olé - Cours d\'espagnol en ligne',
@@ -42,5 +44,10 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
     }
+  },
+
+  gtag: {
+    id: 'G-WBREWTBT6B',
+    enabled: false,
   }
 })

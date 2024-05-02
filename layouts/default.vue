@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="site">
       <header>
         <section class="team-name">
           <a href="/"><img src="~/assets/images/logo1.png"/></a>
@@ -37,6 +37,7 @@
       <footer>
        <div> ©2024 <strong>Académie Olé</strong> académie d'espagnol en ligne</div>
       </footer>
+      <BandeauCookies/>
     </div>
 </template>
 <script setup lang="ts">
