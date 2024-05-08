@@ -36,6 +36,30 @@ export default defineNuxtPlugin(() => {
                         return sessionStorage.removeItem(item)
                     }
                 }
+            },
+            cookies:{
+                getCookie(key) {
+                    if (process.client) {
+                        const match = document.cookie.match('(^|;)\\s*' + key + '\\s*=\\s*([^;]+)');
+                        if (match !== null && match.length > 0) {
+                            return match.pop();
+                        }
+                        return undefined;
+                    } else {
+                        return undefined
+                    }
+                },
+
+                setCookie(key, value) {
+                    if (process.client) {
+                        return document.cookie = `${key}=${value}; expires=31536000000; domain=localhost; path=/`;
+                    }
+                },
+                deleteCookie(key){
+                    if(process.client){
+                        return document.cookie = `${key}=${''}; SameSite=Lax; Secure; max-age=0; domain=localhost; path=/`;
+                    }
+                }
             }
         }
     }

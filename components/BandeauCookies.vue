@@ -12,19 +12,19 @@
     </div>
 </template>
 <script setup lang="ts">  
-    const { $session } = useNuxtApp()
+    const { $cookies } = useNuxtApp()
     const { initialize } = useGtag()
 
     const showBandeau = ref(false)
 
     const setShowBandeau = (choise : boolean) =>{
-        $session.setItem('sessionCookie', JSON.stringify(choise))
+        $cookies.setCookie('sessionCookie', JSON.stringify(choise))
 
         showBandeau.value = !showBandeau.value
     }
 
     onBeforeMount(() => {
-        const sessionCookie = $session.getItem('sessionCookie')
+        const sessionCookie = $cookies.getCookie('sessionCookie')
 
         if(!sessionCookie){
             showBandeau.value = true

@@ -44,7 +44,7 @@
     </div>
 </template>
 <script setup lang="ts">
-    const { $session } = useNuxtApp()
+    const { $cookies } = useNuxtApp()
     const showMenuMobile = ref(false)
 
     const setShowMenuMobile = () =>{
@@ -52,7 +52,7 @@
     }
     
     const refreshCookies = () =>{
-      $session.deleteItem('sessionCookie')
+      $cookies.deleteCookie('sessionCookie')
       location.reload()
     }
 </script>
