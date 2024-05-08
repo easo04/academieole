@@ -50,14 +50,14 @@ export default defineNuxtPlugin(() => {
                     }
                 },
 
-                setCookie(key, value) {
+                setCookie(key, value, domain) {
                     if (process.client) {
-                        return document.cookie = `${key}=${value}; expires=31536000000; domain=localhost; path=/`;
+                        return document.cookie = `${key}=${value}; expires=31536000000; domain=${domain}; path=/`;
                     }
                 },
-                deleteCookie(key){
+                deleteCookie(key, domain){
                     if(process.client){
-                        return document.cookie = `${key}=${''}; SameSite=Lax; Secure; max-age=0; domain=localhost; path=/`;
+                        return document.cookie = `${key}=${''}; SameSite=Lax; Secure; max-age=0; domain=${domain}; path=/`;
                     }
                 }
             }

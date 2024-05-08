@@ -45,6 +45,8 @@
 </template>
 <script setup lang="ts">
     const { $cookies } = useNuxtApp()
+    const config = useRuntimeConfig()
+
     const showMenuMobile = ref(false)
 
     const setShowMenuMobile = () =>{
@@ -52,7 +54,7 @@
     }
     
     const refreshCookies = () =>{
-      $cookies.deleteCookie('sessionCookie')
+      $cookies.deleteCookie('sessionCookie', config.public.domainCookie)
       location.reload()
     }
 </script>

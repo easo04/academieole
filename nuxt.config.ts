@@ -47,7 +47,13 @@ export default defineNuxtConfig({
   },
 
   gtag: {
-    id: 'G-WBREWTBT6B',
+    id: process.env.GTAG_ID,
     enabled: false,
-  }
+  },
+
+  runtimeConfig: {
+    public:{
+      domainCookie: process.env.NUXT_PUBLIC_DOMAIN_COOKIE, 
+    }
+  },
 })

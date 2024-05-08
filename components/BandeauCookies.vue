@@ -14,11 +14,12 @@
 <script setup lang="ts">  
     const { $cookies } = useNuxtApp()
     const { initialize } = useGtag()
+    const config = useRuntimeConfig()
 
     const showBandeau = ref(false)
 
     const setShowBandeau = (choise : boolean) =>{
-        $cookies.setCookie('sessionCookie', JSON.stringify(choise))
+        $cookies.setCookie('sessionCookie', JSON.stringify(choise), config.public.domainCookie)
 
         showBandeau.value = !showBandeau.value
     }
