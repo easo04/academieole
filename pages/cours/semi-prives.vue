@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div class="image-levels">
-                <img src="~/assets/images/levels.webp"/>
+                <img src="~/assets/images/levels.webp" alt="niveau-cours-espagnol"/>
             </div>
         </section>
         <section class="section-spanish-explain bloc">
@@ -63,7 +63,7 @@
         </section>
         <section class="section-service-description">
             <div class="image-service">
-                <img src="~/assets/images/cours-groupe.webp" />
+                <img src="~/assets/images/cours-groupe.webp" alt="cours-groupe"/>
             </div>
             <div class="description-service">
                 <h2>Comment ça marche?</h2>
@@ -80,5 +80,9 @@
 <script setup lang="ts">
     definePageMeta({
         layout: 'default'
+    })
+
+    useHead({
+        title: 'Académie Olé - Cours d\'espagnol semi-privés en ligne',
     })
 </script>

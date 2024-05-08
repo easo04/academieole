@@ -36,7 +36,7 @@
                     </p>
                 </section>
                 <section class="image-qui-sommes-nous">
-                    <img src="~/assets/images/qui-sommes-nous.png"/>
+                    <img src="~/assets/images/qui-sommes-nous.png" alt="academieole-qui-sommes-nous"/>
                 </section>
             </section>
         </section>
@@ -45,7 +45,7 @@
             <section class="section-3-blocs">
                 <section class="service1">
                     <h3>Cours privés</h3>
-                    <div class="image"><img src="~/assets/images/cours-prive.webp"/></div>
+                    <div class="image"><img src="~/assets/images/cours-prive.webp" alt="cours-prives"/></div>
                     <p>
                         Maîtrisez l'espagnol avec des <strong>cours privés en ligne personnalisés</strong>. Nos professeurs qualifiés vous guident à travers un apprentissage sur mesure, adapté à votre niveau et à votre emploi du temps chargé. Commencez dès aujourd'hui votre voyage linguistique vers la fluidité et la confiance en espagnol.
                         <a href="/cours/prives">Plus de détails</a>
@@ -53,7 +53,7 @@
                 </section>
                 <section class="service2">
                     <h3>Cours semi-privés</h3>
-                    <div class="image"><img src="~/assets/images/cours-groupe.webp"/></div>
+                    <div class="image"><img src="~/assets/images/cours-groupe.webp" alt="cours-groupe"/></div>
                     <p>
                         Rejoignez nos <strong>cours d'espagnol en ligne semi-privés </strong>et progressez aux côtés d'autres passionnés de la langue et de la culture hispanique. Des leçons interactives, des conversations dynamiques et une immersion totale vous attendent. Inscrivez-vous dès maintenant et découvrez une nouvelle façon conviviale d'apprendre l'espagnol.
                         <a href="/cours/semi-prives">Plus de détails</a>
@@ -61,7 +61,7 @@
                 </section>
                 <section class="service3">
                     <h3>Cours parascolaires d'espagnol</h3>
-                    <div class="image"><img src="~/assets/images/cours-parascolaires.webp"/></div>
+                    <div class="image"><img src="~/assets/images/cours-parascolaires.webp" alt="cours-parascolaires"/></div>
                     <p>
                         Offrez à vos enfants une aventure éducative passionnante avec nos <strong>cours parascolaires d'espagnol!</strong> Des leçons interactives, des activités amusantes et des professeurs dynamiques les attendent. Donnez-leur une longueur d'avance dès maintenant en leur permettant d'explorer une nouvelle langue et une culture riche.
                         <a href="/cours/parascolaires">Plus de détails</a>
@@ -71,7 +71,7 @@
         </section>
         <section class="section-service-description" id="cours-prive">
             <div class="image-service">
-                <img src="~/assets/images/cours-prive.webp" />
+                <img src="~/assets/images/cours-prive.webp" alt="cours-prives" />
             </div>
             <div class="description-service">
                 <h2>Maîtrisez l'espagnol à votre rythme, avec nos cours privés en ligne!</h2>
@@ -87,7 +87,7 @@
         <div class="separateur"></div>
         <section class="section-service-description renverse" id="cours-groupe">
             <div class="image-service">
-                <img src="~/assets/images/cours-groupe.webp" />
+                <img src="~/assets/images/cours-groupe.webp" alt="cours-groupe"/>
             </div>
             <div class="description-service">
                 <h2>Maximisez votre apprentissage avec nos cours semi-privés d'espagnol en ligne!</h2>
@@ -105,7 +105,7 @@
         <div class="separateur"></div>
         <section class="section-service-description" id="cours-parascolaire">
             <div class="image-service">
-                <img src="~/assets/images/cours-parascolaires.webp" />
+                <img src="~/assets/images/cours-parascolaires.webp" alt="cours-parascolaires"/>
             </div>
             <div class="description-service">
                 <h2>Explorez l'espagnol avec nos cours parascolaires!</h2>
@@ -187,12 +187,12 @@
                 </ul>
             </div>
             <div class="image-levels">
-                <img src="~/assets/images/levels.webp"/>
+                <img src="~/assets/images/levels.webp" alt="niveaux-cours-espagnol"/>
             </div>
         </section>
         <section class="contact bloc" id="contact">
             <section class="image-contact">
-                <img src="~/assets/images/contact.webp"/>
+                <img src="~/assets/images/contact.webp" alt="contactez-nous"/>
             </section>
             <section class="form-contact">
                 <h2>Contactez-nous : Nous sommes là pour vous aider!</h2>

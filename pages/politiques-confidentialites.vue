@@ -116,4 +116,8 @@
     definePageMeta({
         layout: 'default'
     })
+
+    useHead({
+        title: 'Académie Olé - Politiques de confidentialité',
+    })
 </script>

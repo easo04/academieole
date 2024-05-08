@@ -181,12 +181,15 @@ footer{
         @media only screen and (max-width: $tablet-bp) {
             grid-template-columns: 1fr;
             gap: 30px;
-            padding: 50px;
+            padding: 20px;
             height: auto;
         }
 
         .actions-footer{
             text-align: right;
+            @media only screen and (max-width: $tablet-bp) {
+                text-align: left;
+            }
             a{
                 text-decoration: underline;
                 cursor: pointer;
@@ -330,6 +333,8 @@ footer{
         
         section{
 
+            background-color: $color-secondaire;
+
             &.img-background-education{
                 background-color: $color-secondaire;
                 display: flex;
@@ -338,10 +343,12 @@ footer{
                 color:$color-font-2-black;
                 padding: 20px 50px;
                 text-align: justify;
-                height: auto;
+
+                min-height: 600px;
 
                 @media only screen and (max-width: $tablet-bp) {
                     padding: 20px;
+                    height: auto;
                 }
 
                 div{
@@ -360,16 +367,13 @@ footer{
                 }
             }
 
-            min-height: 600px;
-            background-color: $color-secondaire;
-
-            @media only screen and (max-width: $tablet-bp) {
-                height: auto;
-            }
-
             img{
                 width: 100%;
                 height: 100%;
+
+                @media only screen and (max-width: $tablet-bp) {
+                    height: auto;
+                }
             }
 
             p{
@@ -561,10 +565,6 @@ footer{
         .form-contact{
             
             color: $color-white;
-
-            @media only screen and (max-width: $tablet-bp) {
-                padding: 20px;
-            }
 
             h2{
                 color:$color-secondaire;
@@ -988,6 +988,10 @@ footer{
 
         ul{
             padding: 20px;
+            @media only screen and (max-width: $tablet-bp) {
+                padding: 0px;
+                padding-left: 30px;
+            }
             li{
                 margin-bottom: 10px;
                 text-align: justify;
