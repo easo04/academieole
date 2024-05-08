@@ -9,9 +9,20 @@
     grid-template-columns: 3fr 1fr;
     gap:100px;
 
+    @media only screen and (max-width: $tablet-bp) {
+        grid-template-columns: 1fr;
+        gap:30px;
+        padding: 50px;
+    }
+
+
     a{
         color:$color-font-black;
         text-decoration: underline;
+    }
+
+    p{
+        text-align: justify;
     }
 
     .action-cookies{

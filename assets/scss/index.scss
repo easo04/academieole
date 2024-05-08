@@ -178,6 +178,13 @@ footer{
         align-items: center;
         padding: 0 150px;
 
+        @media only screen and (max-width: $tablet-bp) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 50px;
+            height: auto;
+        }
+
         .actions-footer{
             text-align: right;
             a{
@@ -190,6 +197,12 @@ footer{
                 &:not(:last-child){
                     margin-right: 20px;
                 }
+            }
+
+            @media only screen and (max-width: $tablet-bp) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
             }
         }
     }
@@ -323,8 +336,9 @@ footer{
                 align-items: center;
                 justify-content: center;
                 color:$color-font-2-black;
-                padding: 0 50px;
+                padding: 20px 50px;
                 text-align: justify;
+                height: auto;
 
                 @media only screen and (max-width: $tablet-bp) {
                     padding: 20px;
@@ -346,7 +360,7 @@ footer{
                 }
             }
 
-            height: 600px;
+            min-height: 600px;
             background-color: $color-secondaire;
 
             @media only screen and (max-width: $tablet-bp) {
@@ -531,6 +545,7 @@ footer{
             margin-top: 20px;
             padding: 20px;
             gap:10px;
+
         }
 
         .image-contact{
@@ -697,6 +712,8 @@ footer{
             font-size: 1.2em;
             text-align: justify;
             color: $color-font-3-black;
+            
+            margin-bottom: 30px;
 
             @media only screen and (max-width: $tablet-bp) {
                 grid-column-start: 1;
@@ -897,6 +914,11 @@ footer{
         }
 
         ul{
+
+            @media only screen and (max-width: $tablet-bp) {
+                padding-left: 30px;
+            }
+
             li{
                 margin-bottom: 10px;
                 text-align: justify;
