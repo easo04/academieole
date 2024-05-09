@@ -26,11 +26,14 @@ export default defineNuxtConfig({
     head: {
       title: 'Académie Olé - Cours d\'espagnol en ligne',
       meta: [
-        { name: 'description', content: 'Apprenez l\'espagnol avec notre académie basée à Québec. Profitez de cours en ligne de haute qualité pour maîtriser cette langue vibrante depuis chez vous. Rejoignez-nous pour découvrir une nouvelle culture et élargir vos horizons linguistiques.' },
+        { 
+          name: 'description', 
+          content: 'Apprenez l\'espagnol avec notre académie basée à Québec. Profitez de nos cours d\'espagnol privés et semi-privés en ligne. Profitez des cours de haute qualité pour maîtriser cette langue vibrante depuis chez vous. Rejoignez-nous pour découvrir une nouvelle culture et élargir vos horizons linguistiques.' 
+        },
         {
           hid:'keywords',
           name:'keywords',
-          content:'cours en ligne d\'espagnol, cours en groupe d\'espagnol, espagnol Québec, espagnol parascolaire'
+          content:'cours en ligne d\'espagnol, cours privés d\'espagnol, cours en groupe d\'espagnol, espagnol Québec, espagnol parascolaire'
         },
         {
             hid:'robots',
@@ -39,7 +42,8 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/logo-app.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/logo-app.ico' },
+        { rel: 'shortcut icon', type: 'image/x-icon', href: '/logo_app.ico' },
       ],
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',

@@ -4,8 +4,10 @@
             <section class="content-hero-section">
                 <section>
                     <h1>Académie Olé - Cours d'espagnol en ligne</h1>
-                <p>Vous rêvez de parler couramment l'espagnol? Vous souhaitez découvrir une nouvelle langue et une culture vibrante depuis le confort de votre foyer? Ne cherchez plus! Nos cours d'espagnol en ligne sont conçus pour vous aider à atteindre vos objectifs linguistiques</p>
-                <a class="btn" href="#contact">Communiquez avec nous</a>
+                    <h2>Vous rêvez de parler couramment l'espagnol? Vous souhaitez découvrir une nouvelle langue et une 
+                    culture vibrante depuis le confort de votre foyer? Ne cherchez plus! Nos cours d'espagnol en ligne 
+                    sont conçus pour vous aider à atteindre vos objectifs linguistiques</h2>
+                    <a class="btn" href="#contact">Communiquez avec nous</a>
                 </section>
             </section>
         </section>

@@ -300,11 +300,11 @@ footer{
                     font-size: 2.5rem;
                 }
             }
-            p{
+            p, h2{
                 font-size: 1.5rem;
                 color:$color-white-2;
                 margin-bottom: 40px;
-
+                font-weight: 500;
                 @media only screen and (max-width: $tablet-bp) {
                     font-size: 1.3rem;
                 }
