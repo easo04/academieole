@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div class="image-levels">
-                <img src="~/assets/images/levels.webp" alt="niveaux-cours-espagnol"/>
+                <img src="~/assets/images/niveaux-cours-espagnol.webp" alt="nos niveaux d'espagnol pour nos cours parascolaires en ligne"/>
             </div>
         </section>
         <section class="section-spanish-explain bloc">
@@ -62,7 +62,7 @@
         </section>
         <section class="section-service-description">
             <div class="image-service">
-                <img src="~/assets/images/cours-parascolaires.webp" alt="cours-parascolaires"/>
+                <img src="~/assets/images/cours-espagnol-parascolaires.webp" alt="cours parascolaires d'espagnol à québec"/>
             </div>
             <div class="description-service">
                 <h2>Comment ça marche?</h2>
@@ -82,6 +82,17 @@
     })
 
     useHead({
-        title: 'Académie Olé - Cours d\'espagnol parascolaires en ligne',
+        title: 'Académie Olé - Éveillez la curiosité de vos enfants avec nos cours parascolaires d\'espagnol à Québec',
+        meta: [
+            { 
+            name: 'description', 
+            content: 'Offrez à vos enfants une opportunité d\'apprentissage enrichissante avec nos cours parascolaires d\'espagnol à Québec. Conçus spécifiquement pour les jeunes apprenants, nos cours offrent une introduction ludique et interactive à la langue et à la culture espagnoles. Sous la tutelle de nos instructeurs natifs qualifiés, vos enfants seront guidés à travers un programme stimulant qui favorise le développement des compétences linguistiques, tout en cultivant leur curiosité et leur intérêt pour le monde hispanophone.' 
+            },
+            {
+            hid:'keywords',
+            name:'keywords',
+            content:'cours parascolaires d\'espagnol ville Québec, cours parascolaires d\'espagnol,  cours d\'espagnol à l\école'
+            },
+        ]
     })
 </script>

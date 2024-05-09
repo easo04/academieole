@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div class="image-levels">
-                <img src="~/assets/images/levels.webp" alt="niveaux-cours-espagnol"/>
+                <img src="~/assets/images/niveaux-cours-espagnol.webp" alt="nos niveaux d'espagnol pour nos cours privés en ligne"/>
             </div>
         </section>
         <section class="section-spanish-explain bloc">
@@ -63,7 +63,7 @@
         </section>
         <section class="section-service-description">
             <div class="image-service">
-                <img src="~/assets/images/cours-prive.webp" alt="cours-prives" />
+                <img src="~/assets/images/cours-espagnol-prive.webp" alt="cours privés d'espagnol en ligne" />
             </div>
             <div class="description-service">
                 <h2>Comment ça marche?</h2>
@@ -83,6 +83,17 @@
     })
 
     useHead({
-        title: 'Académie Olé - Cours d\'espagnol privés en ligne',
+        title: 'Académie Olé - Maîtrisez l\'espagnol à votre rythme : Cours privés d\'espagnol en ligne',
+        meta: [
+            { 
+            name: 'description', 
+            content: 'Découvrez une expérience d\'apprentissage personnalisée avec nos cours privés d\'espagnol en ligne au Québec. Nos instructeurs natifs qualifiés fournissent un accompagnement individualisé pour vous aider à atteindre vos objectifs linguistiques spécifiques. Que vous souhaitiez perfectionner vos compétences conversationnelles, vous préparer à un examen ou vous immerger dans la culture hispanophone, nos leçons privées vous offrent la flexibilité et l\'attention nécessaires pour progresser à votre propre rythme' 
+            },
+            {
+            hid:'keywords',
+            name:'keywords',
+            content:'cours en ligne d\'espagnol ville Québec, cours privés d\'espagnol, cours privés d\'espagnol au Québec, cours privés d\'espagnol en ligne, cours privés d\'espagnol en ligne ville de Québec'
+            },
+        ]
     })
 </script>

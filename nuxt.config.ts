@@ -24,16 +24,16 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Académie Olé - Cours d\'espagnol en ligne',
+      title: 'Académie Olé - Apprenez l\'espagnol en ligne au Québec : Cours privés, semi-privés et parascolaires',
       meta: [
         { 
           name: 'description', 
-          content: 'Apprenez l\'espagnol avec notre académie basée à Québec. Profitez de nos cours d\'espagnol privés et semi-privés en ligne. Profitez des cours de haute qualité pour maîtriser cette langue vibrante depuis chez vous. Rejoignez-nous pour découvrir une nouvelle culture et élargir vos horizons linguistiques.' 
+          content: 'Bienvenue à notre académie de langues, votre destination pour apprendre l\'espagnol à Québec! Nos cours en ligne offrent une immersion totale dans la langue et la culture espagnole, depuis le confort de votre foyer. Que vous cherchiez des leçons privées pour un apprentissage personnalisé, des cours semi-privés pour partager l\'expérience avec un ami ou un proche, ou des cours parascolaires pour vos enfants, nous avons la solution pour vous.' 
         },
         {
           hid:'keywords',
           name:'keywords',
-          content:'cours en ligne d\'espagnol, cours privés d\'espagnol, cours en groupe d\'espagnol, espagnol Québec, espagnol parascolaire'
+          content:'academie de langues, cours en ligne d\'espagnol, cours privés d\'espagnol, cours en groupe d\'espagnol, espagnol Québec, espagnol parascolaire'
         },
         {
             hid:'robots',

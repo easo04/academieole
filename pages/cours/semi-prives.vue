@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div class="image-levels">
-                <img src="~/assets/images/levels.webp" alt="niveau-cours-espagnol"/>
+                <img src="~/assets/images/niveaux-cours-espagnol.webp" alt="nos niveaux d'espagnol pour nos cours semi-privés en ligne"/>
             </div>
         </section>
         <section class="section-spanish-explain bloc">
@@ -63,7 +63,7 @@
         </section>
         <section class="section-service-description">
             <div class="image-service">
-                <img src="~/assets/images/cours-groupe.webp" alt="cours-groupe"/>
+                <img src="~/assets/images/cours-espagnol-groupe.webp" alt="cours semi-privés d'espagnol en ligne"/>
             </div>
             <div class="description-service">
                 <h2>Comment ça marche?</h2>
@@ -84,5 +84,16 @@
 
     useHead({
         title: 'Académie Olé - Cours d\'espagnol semi-privés en ligne',
+        meta: [
+            { 
+            name: 'description', 
+            content: 'Découvrez une façon collaborative d\'apprendre l\'espagnol avec nos cours semi-privés en ligne à Québec. Conçus pour ceux qui préfèrent partager leur expérience d\'apprentissage avec un ami, un membre de leur famille ou un collègue, nos cours semi-privés offrent une atmosphère d\'apprentissage conviviale et interactive. Sous la guidance de nos instructeurs natifs hautement qualifiés, vous bénéficierez d\'une attention personnalisée tout en profitant de l\'interaction avec un petit groupe' 
+            },
+            {
+            hid:'keywords',
+            name:'keywords',
+            content:'cours en ligne d\'espagnol ville Québec, cours semi-privés d\'espagnol, cours semi-privés d\'espagnol au Québec, cours semi-privés d\'espagnol en ligne, cours semi-privés d\'espagnol en ligne ville de Québec, cours d\'espagnol en groupe'
+            },
+        ]
     })
 </script>
