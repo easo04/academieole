@@ -114,9 +114,9 @@
                 <p>Cherchez-vous une façon passionnante pour vos enfants d'élargir leurs horizons ? Nos cours parascolaires d'espagnol offrent une immersion interactive dans la langue et la culture hispanique.</p>
                 <ul>
                     <li><strong><Icon name="bxs:party"/>Expérience ludique: </strong>Des leçons dynamiques, des jeux et des activités créatives captiveront l'intérêt de vos enfants tout en leur permettant d'apprendre.</li>
-                    <li><strong><Icon name="bx:world"/>Ouverture sur le Monde: </strong> L'espagnol ouvre des portes vers de nouvelles amitiés et des opportunités internationales. Donnez à vos enfants un avantage dès maintenant.</li>
-                    <li><strong><Icon name="fluent-emoji-high-contrast:woman-teacher"/>Professeurs Passionnés: </strong>Nos instructeurs dévoués transmettent leur amour de la langue espagnole à travers des cours interactifs et engageants.</li>
-                    <li><strong><Icon name="material-symbols:book-2"/>Ressources Complètes: </strong>Des outils pédagogiques modernes et des supports multimédias enrichissent l'apprentissage pour une expérience complète.</li>
+                    <li><strong><Icon name="bx:world"/>Ouverture sur le monde: </strong> L'espagnol ouvre des portes vers de nouvelles amitiés et des opportunités internationales. Donnez à vos enfants un avantage dès maintenant.</li>
+                    <li><strong><Icon name="fluent-emoji-high-contrast:woman-teacher"/>Professeurs passionnés: </strong>Nos instructeurs dévoués transmettent leur amour de la langue espagnole à travers des cours interactifs et engageants.</li>
+                    <li><strong><Icon name="material-symbols:book-2"/>Ressources complètes: </strong>Des outils pédagogiques modernes et des supports multimédias enrichissent l'apprentissage pour une expérience complète.</li>
                 </ul>
                 <a href="/cours/parascolaires">Plus de détails</a>
             </div>
