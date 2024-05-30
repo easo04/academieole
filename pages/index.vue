@@ -12,7 +12,7 @@
             </section>
         </section>
         <section class="description bloc qui-sommes-nous" id="qui-sommes-nous">
-            <h2>Ouvrez les Portes du Monde avec Nous : Parlez sans frontières!</h2>
+            <h2>Ouvrez les portes du monde avec nous : Parlez sans frontières!</h2>
             <section class="content-qui-sommes-nous">
                 <section class="description-qui-sommes-nous">
                     <p>L'académie Olé est une entreprise dans <strong>l’apprentissage des langues</strong> avec une méthodologie innovatrice et 
