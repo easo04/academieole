@@ -20,33 +20,33 @@ export default defineNuxtConfig({
     },
   ],
 
-  modules: ['nuxt-icon', 'nuxt-gtag'],
+  modules: ['nuxt-icon', 'nuxt-gtag', '@nuxtjs/sitemap'],
+
+  ssr: true,
 
   app: {
     head: {
-      title: 'Académie Olé - Apprenez l\'espagnol en ligne au Québec : Cours privés, semi-privés et parascolaires',
+      title: "Cours d'espagnol en ligne | Académie Olé | Privés, semi-privés et parascolaires",
       meta: [
-        { 
-          name: 'description', 
-          content: 'Bienvenue à notre académie de langues, votre destination pour apprendre l\'espagnol à Québec! Nos cours en ligne offrent une immersion totale dans la langue et la culture espagnole, depuis le confort de votre foyer. Que vous cherchiez des leçons privées pour un apprentissage personnalisé, des cours semi-privés pour partager l\'expérience avec un ami ou un proche, ou des cours parascolaires pour vos enfants, nous avons la solution pour vous.' 
-        },
-        {
-          hid:'keywords',
-          name:'keywords',
-          content:'academie de langues, cours en ligne d\'espagnol, cours privés d\'espagnol, cours en groupe d\'espagnol, espagnol Québec, espagnol parascolaire'
-        },
-        {
-            hid:'robots',
-            name:'robots',
-            content:'index'
-        },
+        { name: 'description', content: "Apprenez l'espagnol en ligne avec Académie Olé. Cours privés, semi-privés et parascolaires pour tous les niveaux. Professeurs natifs et approche interactive." },
+        { name: 'keywords', content: "cours d'espagnol en ligne, apprendre espagnol, cours espagnol privé, cours espagnol semi-privé, cours espagnol parascolaire, Académie Olé" },
+
+        { property: 'og:title', content: "Cours d'espagnol en ligne | Académie Olé" },
+        { property: 'og:description', content: "Découvrez nos cours d'espagnol privés, semi-privés et parascolaires en ligne. Flexibilité, interactivité, immersion culturelle. Commencez aujourd'hui avec Académie Olé !" },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://www.academieole.com/' },
+        { property: 'og:image', content: 'https://www.academieole.com/images/og-academie-ole.jpg' }, // <-- Image OpenGraph
+
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: "Cours d'espagnol en ligne | Académie Olé" },
+        { name: 'twitter:description', content: "Apprenez l'espagnol depuis chez vous avec nos cours privés, semi-privés et parascolaires." },
+        { name: 'twitter:image', content: 'https://www.academieole.com/images/og-academie-ole.jpg' } // <-- Image Twitter
       ],
       link: [
+        { rel: 'canonical', href: 'https://www.academieole.com/' },
         { rel: 'icon', type: 'image/x-icon', href: '/logo-app.ico' },
         { rel: 'shortcut icon', type: 'image/x-icon', href: '/logo_app.ico' },
-      ],
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
+      ]
     }
   },
 
@@ -60,4 +60,23 @@ export default defineNuxtConfig({
       domainCookie: process.env.NUXT_PUBLIC_DOMAIN_COOKIE, 
     }
   },
+
+  sitemap: {
+    siteUrl: 'https://www.academieole.com', // Remplace par ton vrai domaine
+    trailingSlash: true, // Ajoute un / à la fin des URL (meilleur pour SEO)
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date()
+    },
+    routes: [
+      '/', 
+      '/cours', 
+      '/cours/prives',
+      '/cours/semi-prives',
+      '/cours/parascolaires',
+      '/apropos',
+      '/contact'
+    ]
+  }
 })

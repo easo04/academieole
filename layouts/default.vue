@@ -36,7 +36,7 @@
       </div>
       <footer>
         <div class="copyrigth-footer">
-          <div>©2024 <strong>Académie Olé</strong> académie d'espagnol en ligne</div>
+          <div>©{{ currentYear }} <strong>Académie Olé</strong> académie d'espagnol en ligne</div>
           <div class="actions-footer"><a @click="refreshCookies()">Témoins</a><a href="/politiques-confidentialites">Politique de confidentialité</a></div>
         </div>
       </footer>
@@ -48,6 +48,8 @@
     const config = useRuntimeConfig()
 
     const showMenuMobile = ref(false)
+
+    const currentYear = new Date().getFullYear()
 
     const setShowMenuMobile = () =>{
       showMenuMobile.value = !showMenuMobile.value
