@@ -1,60 +1,54 @@
 <template>
-    <div class="site">
-      <header>
-        <section class="team-name">
-          <a href="/"><img src="~/assets/images/logo1.png"/></a>
-        </section>
-        <section class="actions-header desktop">
-          <ul>
-            <li><a href="/#qui-sommes-nous">Qui sommes nous</a></li>
-            <li class="li-services">
-              <a href="/#services">Nos services</a>
-            </li>
-            <li><a href="/#contact">Communiquez avec nous</a></li>
-          </ul>
-        </section>
-        <section class="actions-header mobile">
-          <Icon @click="setShowMenuMobile()" name="material-symbols:close" v-if="showMenuMobile"/>
-          <Icon @click="setShowMenuMobile()" name="material-symbols:menu" v-if="!showMenuMobile"/>
-        </section>
-        <div class="content-menu-mobile" v-if="showMenuMobile">
-            <ul>
-              <li><a href="/#qui-sommes-nous">Qui sommes nous</a></li>
-              <li><a href="/#services">Nos services</a></li>
-              <li><a href="/#contact">Communiquez avec nous</a></li>
-            </ul>
-          </div>
-      </header>
-      <div class="container">
-          <section class="menu-top">
-              <ul>
-              </ul>
-          </section> 
-          <section class="content">
-            <slot />
-          </section>
+  <div class="site ole-site">
+    <a class="ole-skip-link" href="#main-content">Aller au contenu</a>
+    <header class="ole-header">
+      <div class="ole-header__inner">
+        <NuxtLink class="ole-brand" to="/" aria-label="Académie Olé — Accueil">
+          <img src="~/assets/images/logo1.png" alt="Académie Olé" width="170" height="70" />
+        </NuxtLink>
+        <nav id="ole-primary-nav" class="ole-nav" :class="{ 'ole-nav--open': menuOpen }" aria-label="Navigation principale">
+          <NuxtLink to="/" @click="closeMenu">Accueil</NuxtLink>
+          <NuxtLink to="/cours/prives" @click="closeMenu">Cours privés</NuxtLink>
+          <NuxtLink to="/cours/semi-prives" @click="closeMenu">Cours en groupe</NuxtLink>
+          <NuxtLink to="/cours/parascolaires" @click="closeMenu">Parascolaire</NuxtLink>
+          <NuxtLink to="/#qui-sommes-nous" @click="closeMenu">À propos</NuxtLink>
+          <NuxtLink to="/#contact" class="ole-nav__cta" @click="closeMenu">Nous contacter</NuxtLink>
+        </nav>
+        <button class="ole-menu-toggle" type="button" :aria-expanded="menuOpen" aria-controls="ole-primary-nav" :aria-label="menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'" @click="menuOpen = !menuOpen">
+          <span aria-hidden="true">{{ menuOpen ? '✕' : '☰' }}</span>
+        </button>
       </div>
-      <footer>
-        <div class="copyrigth-footer">
-          <div>©2024 <strong>Académie Olé</strong> académie d'espagnol en ligne</div>
-          <div class="actions-footer"><a @click="refreshCookies()">Témoins</a><a href="/politiques-confidentialites">Politique de confidentialité</a></div>
+    </header>
+    <main id="main-content" class="ole-main"><slot /></main>
+    <footer class="ole-footer">
+      <div class="ole-footer__inner">
+        <div>
+          <strong>Académie Olé</strong>
+          <p>L’espagnol s’apprend. La culture se vit !</p>
+          <small>© {{ year }} Académie Olé. Tous droits réservés.</small>
         </div>
-      </footer>
-      <BandeauCookies/>
-    </div>
+        <nav aria-label="Liens du pied de page">
+          <NuxtLink to="/cours/prives">Cours privés</NuxtLink>
+          <NuxtLink to="/cours/semi-prives">Cours en groupe</NuxtLink>
+          <NuxtLink to="/cours/parascolaires">Parascolaire</NuxtLink>
+          <NuxtLink to="/politiques-confidentialites">Confidentialité</NuxtLink>
+          <button type="button" @click="resetCookies">Préférences de témoins</button>
+        </nav>
+      </div>
+    </footer>
+    <BandeauCookies />
+  </div>
 </template>
+
 <script setup lang="ts">
-    const { $cookies } = useNuxtApp()
-    const config = useRuntimeConfig()
-
-    const showMenuMobile = ref(false)
-
-    const setShowMenuMobile = () =>{
-      showMenuMobile.value = !showMenuMobile.value
-    }
-    
-    const refreshCookies = () =>{
-      $cookies.deleteCookie('sessionCookie', config.public.domainCookie)
-      location.reload()
-    }
+const menuOpen = ref(false)
+const year = new Date().getFullYear()
+const { $cookies } = useNuxtApp()
+const config = useRuntimeConfig()
+const closeMenu = () => { menuOpen.value = false }
+const resetCookies = () => {
+  if (!import.meta.client) return
+  $cookies.deleteCookie('sessionCookie', config.public.domainCookie)
+  window.location.reload()
+}
 </script>
