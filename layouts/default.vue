@@ -6,7 +6,7 @@
         <NuxtLink class="ole-brand" to="/" aria-label="Académie Olé — Accueil">
           <img src="~/assets/images/logo1.png" alt="Académie Olé" width="170" height="70" />
         </NuxtLink>
-        <nav class="ole-nav" :class="{ 'ole-nav--open': menuOpen }" aria-label="Navigation principale">
+        <nav id="ole-primary-nav" class="ole-nav" :class="{ 'ole-nav--open': menuOpen }" aria-label="Navigation principale">
           <NuxtLink to="/" @click="closeMenu">Accueil</NuxtLink>
           <NuxtLink to="/cours/prives" @click="closeMenu">Cours privés</NuxtLink>
           <NuxtLink to="/cours/semi-prives" @click="closeMenu">Cours en groupe</NuxtLink>
